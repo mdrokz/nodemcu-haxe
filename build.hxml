@@ -1,0 +1,7 @@
+--class-path .
+
+--main Main
+
+--dce full
+
+--lua out.lua
