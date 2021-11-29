@@ -4,7 +4,6 @@ import lua.Table;
 
 @:native("ds18b20")
 @:luaRequire
-@:luaDotMethod
 extern class DS18B20 {
 	public var C:String;
 	public var F:String;
