@@ -4,6 +4,7 @@ import lua.Table;
 
 @:native("ds18b20")
 @:luaRequire
+// for reference - https://nodemcu.readthedocs.io/en/release/lua-modules/ds18b20/
 extern class DS18B20 {
 	public var C:String;
 	public var F:String;
