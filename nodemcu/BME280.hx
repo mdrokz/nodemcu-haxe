@@ -13,11 +13,13 @@ extern class Reading {
 @:native("bme280")
 @:luaRequire
 @:luaDotMethod
+// for reference - https://nodemcu.readthedocs.io/en/release/lua-modules/bme280/
 extern class BME280 {
 	public function setup(id:Int, ?address:Int, ?temp_oss:Int, ?press_oss:Int, ?humi_oss:Int, ?sensor_mode:Int, ?inactive_duration:Int, ?IIR_filter:Int,
 		?cold_start:Int):BMEObject;
 }
 
+// for reference - https://nodemcu.readthedocs.io/en/release/lua-modules/bme280/#bme280-sensor-object-methods
 extern typedef BMEObject = {
 	public function setup(id:Int, ?address:Int, ?temp_oss:Int, ?press_oss:Int, ?humi_oss:Int, ?sensor_mode:Int, ?inactive_duration:Int, ?IIR_filter:Int,
 		?cold_start:Int):BMEObject;
